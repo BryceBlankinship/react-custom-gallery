@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import Image from './image'
+import Image from './image.jsx'
 
 export default function CustomGallery({ preSelectedImages, images, onSelect, containerStyle, selectedStyle, unselectedStyle, width, height }) {
     preSelectedImages = preSelectedImages.map((image) => ({ src: image, isSelected: true }));

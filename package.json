@@ -1,12 +1,13 @@
 {
   "name": "react-custom-gallery",
   "version": "1.0.0",
-  "description": "Fully customizable image gallery for react, with easy support to load initial images from the server",
+  "description": "Inuitive, simple, customizable image gallery for react, with easy support for pre-selected images.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-lib": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-console": "^1.2.3",
     "@storybook/addon-essentials": "^6.4.22",
@@ -33,6 +37,10 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rollup": "^3.17.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
