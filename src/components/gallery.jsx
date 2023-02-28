@@ -50,9 +50,6 @@ export default function CustomGallery({ preSelectedImages, images, onSelect, con
                     />
                 )
             })}
-            {elements.map((element) => {
-                return <p>{element.isSelected === true ? 'true' : 'false'}</p>
-            })}
         </div>
     )
 }

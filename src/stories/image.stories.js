@@ -15,11 +15,7 @@ stories.add('App', () => {
 
     const [images, setImages] = useState([]);
 
-    return (<>
-        {images.map((image) => {
-            if (image.isSelected) {
-                return <p>{image.src}</p>
-            }
-        })}
-        <ImageGallery preSelectedImages={preImages} images={allImages} onPick={setImages} width={150} height={150} /></>)
+    return (
+        <ImageGallery preSelectedImages={preImages} images={allImages} onSelect={setImages} width={150} height={150} />
+    )
 });

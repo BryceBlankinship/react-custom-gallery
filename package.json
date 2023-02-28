@@ -2,7 +2,8 @@
   "name": "react-custom-gallery",
   "version": "1.0.0",
   "description": "Inuitive, simple, customizable image gallery for react, with easy support for pre-selected images.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
