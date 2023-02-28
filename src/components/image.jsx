@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function Image({ src, isSelected, onImageClick, unSelectedStyle, selectedStyle, width, height }) {
+export default function Image({ src, isSelected, onImageClick, unselectedStyle, selectedStyle, width, height }) {
 
-    const unSelected = unSelectedStyle || {
+    const unSelected = unselectedStyle || {
         borderRadius: 4,
         marginLeft: 5,
         marginRight: 5,
@@ -35,7 +35,7 @@ Image.propTypes = {
     src: PropTypes.string,
     isSelected: PropTypes.bool,
     onImageClick: PropTypes.func,
-    unSelectedStyle: PropTypes.object,
+    unselectedStyle: PropTypes.object,
     selectedStyle: PropTypes.object,
     width: PropTypes.number,
     height: PropTypes.number

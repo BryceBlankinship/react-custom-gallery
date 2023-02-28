@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Image from './image'
 
-export default function ImageGallery({ preSelectedImages, images, onPick, containerStyle, selectedStyle, unSelectedStyle, width, height }) {
+export default function CustomGallery({ preSelectedImages, images, onSelect, containerStyle, selectedStyle, unselectedStyle, width, height }) {
     preSelectedImages = preSelectedImages.map((image) => ({ src: image, isSelected: true }));
     images = images.map((image) => ({ src: image, isSelected: false }));
 
@@ -17,7 +17,7 @@ export default function ImageGallery({ preSelectedImages, images, onPick, contai
                 }
             });
             setElements([...images]);
-            onPick([...images]);
+            onSelect([...images]);
         });
     }, []);
 
@@ -31,7 +31,7 @@ export default function ImageGallery({ preSelectedImages, images, onPick, contai
         })
 
         setElements([...imagesCopy]);
-        onPick([...imagesCopy]);
+        onSelect([...imagesCopy]);
     }
 
     return (
@@ -44,7 +44,7 @@ export default function ImageGallery({ preSelectedImages, images, onPick, contai
                         onImageClick={() => handleImageClick(image)}
                         key={i + Math.random()}
                         selectedStyle={selectedStyle}
-                        unSelectedStyle={unSelectedStyle}
+                        unselectedStyle={unselectedStyle}
                         width={width}
                         height={height}
                     />
@@ -57,14 +57,14 @@ export default function ImageGallery({ preSelectedImages, images, onPick, contai
     )
 }
 
-ImageGallery.propTypes = {
+CustomGallery.propTypes = {
     preSelectedImages: PropTypes.array,
     images: PropTypes.array,
     multiple: PropTypes.bool,
-    onPick: PropTypes.func,
+    onSelect: PropTypes.func,
     containerStyle: PropTypes.object,
     selectedStyle: PropTypes.object,
-    unSelectedStyle: PropTypes.object,
+    unselectedStyle: PropTypes.object,
     width: PropTypes.number,
     height: PropTypes.number
 }
