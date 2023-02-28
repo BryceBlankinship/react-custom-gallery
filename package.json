@@ -1,6 +1,6 @@
 {
   "name": "react-custom-gallery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inuitive, simple, customizable image gallery for react, with easy support for pre-selected images.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

@@ -11,7 +11,7 @@ npm install react-custom-gallery
 <br>
 
 ## Demo with Storybook
-![Epic Storybook Demo](react-custom-gallery-demo.gif) / ! [](react-custom-gallery-demo.gif)
+![Epic Storybook Demo](react-custom-gallery-demo.gif) [](react-custom-gallery-demo.gif)
 ```
 npx storybook init
 
